@@ -84,7 +84,7 @@
 
     .gallery {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
 
@@ -94,6 +94,8 @@
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
     }
 
     .card:hover {
@@ -103,11 +105,14 @@
     .card img {
         width: 100%;
         height: 200px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .content {
         padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
 
     h2 {
@@ -186,5 +191,6 @@
     .buttons {
         display: flex;
         gap: 0.1em;
+        margin-top: auto;
     }
 </style>
