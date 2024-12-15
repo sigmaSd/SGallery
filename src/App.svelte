@@ -70,22 +70,29 @@
 </main>
 
 <style>
+    :root {
+        --primary-color: #4caf50;
+        --secondary-color: #2196f3;
+        --background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+    }
+
     main {
         max-width: 1400px;
         margin: 0 auto;
         padding: 1rem;
+        background: var(--background);
     }
 
     h1 {
         text-align: center;
-        color: #333;
+        color: #fff;
         margin-bottom: 1.5rem;
     }
 
     .gallery {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .card {
@@ -96,6 +103,8 @@
         transition: transform 0.2s ease-in-out;
         display: flex;
         flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.2rem;
     }
 
     .card:hover {
@@ -109,7 +118,7 @@
     }
 
     .content {
-        padding: 0.8rem;
+        padding: 1.2rem;
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -118,7 +127,8 @@
     h2 {
         margin: 0 0 0.3rem 0;
         color: #333;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        font-weight: 600;
     }
 
     p {
@@ -147,10 +157,16 @@
         color: #666;
     }
 
-    a {
+    .buttons {
+        display: flex;
+        gap: 0.5em;
+        margin-top: auto;
+    }
+
+    .buttons a:first-child {
         display: inline-flex;
         align-items: center;
-        background: #4caf50;
+        background: var(--secondary-color);
         color: white;
         padding: 0.4rem 0.8rem;
         text-decoration: none;
@@ -159,8 +175,20 @@
         transition: background 0.2s ease-in-out;
     }
 
-    a:hover {
-        background: #45a049;
+    .buttons a:last-child {
+        display: inline-flex;
+        align-items: center;
+        background: var(--primary-color);
+        color: white;
+        padding: 0.4rem 0.8rem;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        transition: background 0.2s ease-in-out;
+    }
+
+    .buttons a:hover {
+        filter: brightness(90%);
     }
 
     @media (max-width: 1200px) {
@@ -187,10 +215,5 @@
         .content {
             padding: 0.6rem;
         }
-    }
-    .buttons {
-        display: flex;
-        gap: 0.1em;
-        margin-top: auto;
     }
 </style>
