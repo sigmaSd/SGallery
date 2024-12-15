@@ -1,6 +1,6 @@
 import { serveFile } from "jsr:@std/http@1.0.12/file-server";
 
-console.log([...Deno.readDirSync("./src")]);
+// console.log([...Deno.readDirSync("./src")]);
 console.log(4);
 console.log([...Deno.readDirSync("..")]);
 Deno.serve((req) => {
