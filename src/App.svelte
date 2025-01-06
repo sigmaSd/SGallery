@@ -8,7 +8,7 @@
             image: "https://raw.githubusercontent.com/sigmaSd/AlbumCam/refs/heads/master/assets/images/adaptive-icon.png",
             link: "https://github.com/sigmaSd/AlbumCam",
             download:
-                "https://expo.dev/artifacts/eas/qycG2aneqwdsD7qywDSTg8.apk",
+                "https://expo.dev/artifacts/eas/qNxCK2aJnvr9AXNNNkjkJ4.apk",
             tags: ["Mobile", "Camera"],
         },
         {
